@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyzzle</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pyzzle</h1>
+    </header>
+
+    <main>
+      <section class="image-upload">
+        <h2>Dodajte sliku:</h2>
+        <input type="file" id="image-upload" accept="image/*" />
+        <button id="upload-button" class="button">Uploaduj sliku</button>
+        <p id="upload-status"></p>
+      </section>
+
+      <section class="size-selection">
+        <h2>Izaberite veličinu slagalice:</h2>
+        <form id="size-form">
+          <label>
+            <input type="radio" name="size" value="3" checked /> 3x3
+          </label>
+          <label> <input type="radio" name="size" value="4" /> 4x4 </label>
+        </form>
+      </section>
+
+      <div id="grid" class="puzzle-grid"></div>
+
+      <section class="algorithm-selection">
+        <h2>Izaberite algoritam:</h2>
+        <form id="algorithm-form">
+          <label>
+            <input type="radio" name="algorithm" value="bfs" checked />
+            Breadth-First Search
+          </label>
+          <label>
+            <input type="radio" name="algorithm" value="greedy" />
+            Greedy Best-First Search
+          </label>
+          <label>
+            <input type="radio" name="algorithm" value="astar" />
+            A*
+          </label>
+        </form>
+      </section>
+
+      <section class="heuristic-selection">
+        <h2>Izaberite heuristiku:</h2>
+        <form id="heuristic-form">
+          <label>
+            <input type="radio" name="heuristic" value="manhattan" checked />
+            Manhattan
+          </label>
+          <label>
+            <input type="radio" name="heuristic" value="hamming" />
+            Hamming
+          </label>
+        </form>
+      </section>
+
+      <section class="controls">
+        <button id="start-game" class="button">Pokreni igru</button>
+        <button id="shuffle" class="button">Izmešaj</button>
+        <button id="stop-simulation" class="button button-danger">
+          Zaustavi simulaciju
+        </button>
+        <p id="move-counter">Broj poteza: 0</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Pyzzle.</p>
+    </footer>
+
+    <script src="/static/js/game.js" defer></script>
+  </body>
+</html>

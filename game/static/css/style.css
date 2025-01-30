@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  background-color: #87ceeb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #4682b4;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Main Section */
+main {
+  max-width: 650px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #4682b4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Puzzle Grid */
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile.empty {
+  background-color: #87ceeb;
+  border: 2px solid transparent;
+}
+
+/* Algorithm and Heuristic Selection */
+.algorithm-selection,
+.heuristic-selection {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.algorithm-selection h2,
+.heuristic-selection h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4682b4;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Controls */
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+}
+
+.button-danger {
+  background-color: #ff6347;
+  color: white;
+}
+
+button:hover {
+  background-color: #4682b4;
+  transform: scale(1.05);
+}
+
+.button-danger:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
