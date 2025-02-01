@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%-1j7mqrxn4)l$#b&3f3o09h$ift&fw4!)@c)or^th22$k^2ms
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://pyzzle-4slv.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["pyzzle-4slv.onrender.com", "localhost", "127.0.0.1"]
 
 
 
