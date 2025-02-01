@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const heuristicButtons = document.querySelectorAll("input[name='heuristic']");
   const sizeButtons = document.querySelectorAll("input[name='size']");
   const moveCounter = document.getElementById("move-counter"); // ✔️ Ispravljen brojač poteza
-  const apiBaseUrl = "http://127.0.0.1:8000/game";
+  const apiBaseUrl = "https://pyzzle-4slv.onrender.com/game";
 
   let currentState = [];
   let goalState = [];
